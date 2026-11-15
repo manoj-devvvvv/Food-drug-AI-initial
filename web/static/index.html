@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drug–Food Interaction Predictor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css?v=5" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26"><path d="M16 3a13 13 0 1 0 0 26 13 13 0 0 0 0-26Zm0 3a10 10 0 0 1 9.5 7H15v3h11.4a10 10 0 0 1-4.1 6.2L16 16.5 13 19l5.6 5.6A10 10 0 0 1 6.5 13h11V10H6.5A10 10 0 0 1 16 6Z" fill="currentColor"/></svg>
+      </span>
+      <div>
+        <h1>Drug–Food Interaction Predictor</h1>
+        <p>MOE pair descriptors · 18 selected features · tree ensemble</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <nav class="top-links" aria-label="Site">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+      </nav>
+      <div class="segmented" role="group" aria-label="Label mode">
+        <button type="button" data-mode="S" class="active" aria-pressed="true"
+                title="Labels only the compounds named by the interaction text (honest, headline mode)">
+          Specific
+        </button>
+        <button type="button" data-mode="P" aria-pressed="false"
+                title="Applies a drug-level label to every compound (paper-like, optimistic)">
+          Paper-like
+        </button>
+      </div>
+      <span id="health" class="pill pill-wait"><i></i><span>Connecting…</span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel query" aria-labelledby="query-title">
+      <div class="panel-head">
+        <h2 id="query-title">Check a pair</h2>
+        <p>Enter names, IDs or SMILES. Names autocomplete from the curated tables.</p>
+      </div>
+
+      <form id="form" novalidate>
+        <div class="fields">
+          <div class="field">
+            <label for="drug">Drug</label>
+            <input id="drug" name="drug" list="drug-list" placeholder="warfarin — or a SMILES string"
+                   autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="300" required />
+            <datalist id="drug-list"></datalist>
+            <span class="hint">Drug name, DrugBank / PubChem CID, or canonical SMILES</span>
+          </div>
+
+          <button type="button" id="swap" class="swap" aria-label="Swap drug and food">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 4 3 8l4 4V9h10V7H7V4Zm10 8v3H7v2h10v3l4-4-4-4Z" fill="currentColor"/></svg>
+          </button>
+
+          <div class="field">
+            <label for="food">Food or compound</label>
+            <input id="food" name="food" list="food-list" placeholder="ethanol — or a SMILES string"
+                   autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="300" required />
+            <datalist id="food-list"></datalist>
+            <span class="hint">Compound name, food name (e.g. “grapefruit”), or canonical SMILES</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" id="submit" class="primary">
+            <span class="btn-label">Predict interaction</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+          <span class="kbd-hint"><kbd>Enter</kbd> to run</span>
+          <span id="form-error" class="form-error" role="alert"></span>
+        </div>
+      </form>
+
+      <div class="examples">
+        <span class="examples-label">Try</span>
+        <div id="chips" class="chips"></div>
+      </div>
+    </section>
+
+    <section id="result" class="panel result" aria-live="polite" aria-atomic="false">
+      <div class="empty">
+        <div class="empty-glyph" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="54" height="54"><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 6"/><circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="41" cy="40" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M29 29 36 35" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Prediction appears here</h3>
+        <p>You get a three-class verdict, class probabilities, a plain-language sentence, and the matched compounds used.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="disclaimer-dot" aria-hidden="true"></span>
+    Research tool; confirm with a physician or pharmacist. The model abstains below its confidence threshold and refuses out-of-domain compounds.
+  </footer>
+
+  <script src="/static/app.js?v=4"></script>
+</body>
+</html>

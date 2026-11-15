@@ -1,0 +1,82 @@
+seed: 42
+
+paths:
+  drugs_raw: ../Druginfo.csv
+  interactions_raw: ../InteractionInformation.csv
+  foods_raw: ../food_fhdi_clean.csv
+  interim: data/interim
+  processed: data/processed
+  models: models
+  reports: reports
+  figures: figures
+
+data:
+  tanimoto_cutoff: 0.75
+  morgan_radius: 2
+  morgan_bits: 2048
+  protected_compounds:
+    - ethanol
+    - tyramine
+    - caffeine
+    - bergamottin
+    - naringin
+    - hyperforin
+    - phylloquinone
+    - vitamin k1
+    - dimethyl disulfide
+  metals:
+    - Li, Na, K, Rb, Cs, Fr, Be, Mg, Ca, Sr, Ba, Ra
+    - Sc, Ti, V, Cr, Mn, Fe, Co, Ni, Cu, Zn, Y, Zr, Nb, Mo, Tc, Ru, Rh, Pd, Ag, Cd
+    - Hf, Ta, W, Re, Os, Ir, Pt, Au, Hg, Al, Ga, In, Tl, Sn, Pb, Bi, Ge, Sb, Te, As
+  inorganic_names:
+    - calcium
+    - potassium
+    - sodium
+    - magnesium
+    - iron
+    - zinc
+    - copper
+    - manganese
+    - selenium
+    - iodine
+    - phosphorus
+    - aluminium
+    - aluminum
+
+labels:
+  effect_to_class:
+    Negative: 0
+    Harmful: 0
+    Positive: 1
+    No Effect: 2
+    Possible: 2
+    possible: 2
+  negative_precedence: true
+  mode_p_pairs_per_drug: 300
+  mode_s_weak_pairs_per_drug: 25
+  mode_s_weak_ratio: 0.5
+  mode_s_weak_max: 500
+  mode_s_food_max_frequency: 20
+  mode_s_food_max_compounds: 25
+  audit_sentences: 100
+
+features:
+  variance_threshold: 0.8
+  pearson_cutoff: 0.75
+  lasso_alpha: 0.01
+  target_features: 18
+  selection_sample: 40000
+  stability_runs: 3
+
+splits:
+  train_frac: 0.5008
+  val_frac: 0.375
+  test_frac: 0.1242
+
+models:
+  cv_folds: 5
+  search_iterations: 80
+  confidence_threshold: 0.6
+  class_weight: balanced
+  train_cap: 50000
+  weak_sample_weight: 0.5

@@ -1,0 +1,70 @@
+{
+  "grapefruit": [
+    "bergamottin",
+    "naringin",
+    "bergapten"
+  ],
+  "grape": [
+    "(z)-resveratrol",
+    "catechin"
+  ],
+  "cranberry": [
+    "(z)-resveratrol",
+    "catechin",
+    "proanthocyanidins",
+    "cyanidin"
+  ],
+  "pomegranate": [
+    "cyanidin",
+    "ellagic acid"
+  ],
+  "garlic": [
+    "allicin",
+    "dimethyl disulfide"
+  ],
+  "ginger": [
+    "[4]-gingerol",
+    "methylgingerol"
+  ],
+  "turmeric": [
+    "curcumin"
+  ],
+  "st john": [
+    "hyperforin",
+    "hypericin"
+  ],
+  "milk": [
+    "calcium"
+  ],
+  "coffee": [
+    "caffeine"
+  ],
+  "tea": [
+    "caffeine",
+    "catechin"
+  ],
+  "spinach": [
+    "phylloquinone"
+  ],
+  "kale": [
+    "phylloquinone"
+  ],
+  "broccoli": [
+    "phylloquinone",
+    "sulforaphane"
+  ],
+  "soybean": [
+    "genistein",
+    "daidzein"
+  ],
+  "licorice": [
+    "glycyrrhizic acid",
+    "glycyrrhizin"
+  ],
+  "alcohol": [
+    "ethanol"
+  ],
+  "ethanol": [
+    "ethanol"
+  ]
+}

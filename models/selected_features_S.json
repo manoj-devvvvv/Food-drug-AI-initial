@@ -1,0 +1,407 @@
+{
+  "mode": "S",
+  "selection_split": "Split G training partition",
+  "n_selected": 18,
+  "features": [
+    {
+      "name": "MRVSA6*EstateVSA6",
+      "term": "product",
+      "drug_descriptor": "MRVSA6",
+      "food_descriptor": "EstateVSA6",
+      "drug_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "food_descriptor_meaning": "surface-area contribution to electrotopological state",
+      "selected_in_full_run": true,
+      "stability_hits": 2
+    },
+    {
+      "name": "PEOEVSA5+PEOEVSA5",
+      "term": "sum",
+      "drug_descriptor": "PEOEVSA5",
+      "food_descriptor": "PEOEVSA5",
+      "drug_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "food_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "selected_in_full_run": true,
+      "stability_hits": 3
+    },
+    {
+      "name": "PEOEVSA6+PEOEVSA6",
+      "term": "sum",
+      "drug_descriptor": "PEOEVSA6",
+      "food_descriptor": "PEOEVSA6",
+      "drug_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "food_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "selected_in_full_run": true,
+      "stability_hits": 2
+    },
+    {
+      "name": "PEOEVSA7+PEOEVSA7",
+      "term": "sum",
+      "drug_descriptor": "PEOEVSA7",
+      "food_descriptor": "PEOEVSA7",
+      "drug_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "food_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "selected_in_full_run": true,
+      "stability_hits": 2
+    },
+    {
+      "name": "VSAEstate6+VSAEstate6",
+      "term": "sum",
+      "drug_descriptor": "VSAEstate6",
+      "food_descriptor": "VSAEstate6",
+      "drug_descriptor_meaning": "VSA-binned electrotopological state contribution",
+      "food_descriptor_meaning": "VSA-binned electrotopological state contribution",
+      "selected_in_full_run": true,
+      "stability_hits": 3
+    },
+    {
+      "name": "slogPVSA1/slogPVSA1",
+      "term": "ratio",
+      "drug_descriptor": "slogPVSA1",
+      "food_descriptor": "slogPVSA1",
+      "drug_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "food_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "selected_in_full_run": true,
+      "stability_hits": 3
+    },
+    {
+      "name": "MRVSA5/MRVSA5",
+      "term": "ratio",
+      "drug_descriptor": "MRVSA5",
+      "food_descriptor": "MRVSA5",
+      "drug_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "food_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "selected_in_full_run": true,
+      "stability_hits": 3
+    },
+    {
+      "name": "MRVSA9/MRVSA9",
+      "term": "ratio",
+      "drug_descriptor": "MRVSA9",
+      "food_descriptor": "MRVSA9",
+      "drug_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "food_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "selected_in_full_run": true,
+      "stability_hits": 2
+    },
+    {
+      "name": "slogPVSA9*PEOEVSA8",
+      "term": "product",
+      "drug_descriptor": "slogPVSA9",
+      "food_descriptor": "PEOEVSA8",
+      "drug_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "food_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "selected_in_full_run": true,
+      "stability_hits": 1
+    },
+    {
+      "name": "MRVSA3*PEOEVSA8",
+      "term": "product",
+      "drug_descriptor": "MRVSA3",
+      "food_descriptor": "PEOEVSA8",
+      "drug_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "food_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "selected_in_full_run": true,
+      "stability_hits": 0
+    },
+    {
+      "name": "MRVSA5*PEOEVSA10",
+      "term": "product",
+      "drug_descriptor": "MRVSA5",
+      "food_descriptor": "PEOEVSA10",
+      "drug_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "food_descriptor_meaning": "surface-area contribution to Gasteiger partial charge",
+      "selected_in_full_run": true,
+      "stability_hits": 0
+    },
+    {
+      "name": "slogPVSA5+slogPVSA5",
+      "term": "sum",
+      "drug_descriptor": "slogPVSA5",
+      "food_descriptor": "slogPVSA5",
+      "drug_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "food_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "selected_in_full_run": true,
+      "stability_hits": 1
+    },
+    {
+      "name": "slogPVSA7+slogPVSA7",
+      "term": "sum",
+      "drug_descriptor": "slogPVSA7",
+      "food_descriptor": "slogPVSA7",
+      "drug_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "food_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "selected_in_full_run": true,
+      "stability_hits": 0
+    },
+    {
+      "name": "slogPVSA9+slogPVSA9",
+      "term": "sum",
+      "drug_descriptor": "slogPVSA9",
+      "food_descriptor": "slogPVSA9",
+      "drug_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "food_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "selected_in_full_run": true,
+      "stability_hits": 0
+    },
+    {
+      "name": "slogPVSA11+slogPVSA11",
+      "term": "sum",
+      "drug_descriptor": "slogPVSA11",
+      "food_descriptor": "slogPVSA11",
+      "drug_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "food_descriptor_meaning": "van der Waals surface-area contribution to SlogP (hydrophobicity)",
+      "selected_in_full_run": true,
+      "stability_hits": 1
+    },
+    {
+      "name": "VSAEstate2+VSAEstate2",
+      "term": "sum",
+      "drug_descriptor": "VSAEstate2",
+      "food_descriptor": "VSAEstate2",
+      "drug_descriptor_meaning": "VSA-binned electrotopological state contribution",
+      "food_descriptor_meaning": "VSA-binned electrotopological state contribution",
+      "selected_in_full_run": true,
+      "stability_hits": 0
+    },
+    {
+      "name": "abs(MRVSA5-MRVSA5)",
+      "term": "abs_diff",
+      "drug_descriptor": "MRVSA5",
+      "food_descriptor": "MRVSA5",
+      "drug_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "food_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "selected_in_full_run": true,
+      "stability_hits": 0
+    },
+    {
+      "name": "abs(MRVSA6-MRVSA6)",
+      "term": "abs_diff",
+      "drug_descriptor": "MRVSA6",
+      "food_descriptor": "MRVSA6",
+      "drug_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "food_descriptor_meaning": "surface-area contribution to molar refractivity",
+      "selected_in_full_run": true,
+      "stability_hits": 1
+    }
+  ],
+  "counts": {
+    "start": 3780,
+    "after_variance": 3521,
+    "after_correlation": 1126,
+    "after_lasso": 174,
+    "after_rfecv": 89,
+    "rfe18": 18
+  },
+  "paper_counts": {
+    "start": 3780,
+    "after_variance": 2845,
+    "after_correlation": 1568,
+    "after_lasso": 1516,
+    "final": 18
+  },
+  "rfe_comparison": {
+    "rfecv_n_features": 89,
+    "rfecv_cv_macro_f1": 0.35056288676474223,
+    "rfe18_cv_macro_f1": 0.32630677940054514,
+    "rfecv_curve": {
+      "8": 0.31147916179361124,
+      "21": 0.3173940989843652,
+      "38": 0.32953216475932373,
+      "55": 0.33594210444219114,
+      "72": 0.338556267535129,
+      "89": 0.34220412479286483,
+      "106": 0.33807429662366034,
+      "123": 0.3374092565368926,
+      "140": 0.3327613704144684,
+      "157": 0.3323253591772414,
+      "174": 0.3319085606397779
+    }
+  },
+  "l1_logistic_comparison": {
+    "lasso_nonzero": 174,
+    "l1_logistic_nonzero": 68,
+    "overlap": 68,
+    "error": null
+  },
+  "stability": {
+    "runs": [
+      {
+        "seed_rows": 6297,
+        "features": [
+          "slogPVSA9*PEOEVSA8",
+          "MRVSA6*LabuteASA",
+          "MRVSA6*EstateVSA6",
+          "MRVSA9*EstateVSA7",
+          "PEOEVSA5*PEOEVSA6",
+          "PEOEVSA5*PEOEVSA8",
+          "PEOEVSA5*VSAEstate9",
+          "PEOEVSA6*PEOEVSA10",
+          "EstateVSA2*VSAEstate0",
+          "slogPVSA5+slogPVSA5",
+          "PEOEVSA5+PEOEVSA5",
+          "PEOEVSA6+PEOEVSA6",
+          "PEOEVSA7+PEOEVSA7",
+          "EstateVSA2+EstateVSA2",
+          "VSAEstate6+VSAEstate6",
+          "slogPVSA1/slogPVSA1",
+          "MRVSA5/MRVSA5",
+          "EstateVSA3/EstateVSA3"
+        ],
+        "counts": {
+          "start": 3780,
+          "after_variance": 3522,
+          "after_correlation": 1142,
+          "after_lasso": 192,
+          "after_rfecv": 18,
+          "rfe18": 18
+        }
+      },
+      {
+        "seed_rows": 6297,
+        "features": [
+          "PEOEVSA5*VSAEstate8",
+          "PEOEVSA10*slogPVSA3",
+          "EstateVSA2*VSAEstate5",
+          "EstateVSA3*slogPVSA4",
+          "EstateVSA3*VSAEstate0",
+          "EstateVSA7*PEOEVSA10",
+          "EstateVSA9*EstateVSA4",
+          "VSAEstate2*EstateVSA7",
+          "slogPVSA11+slogPVSA11",
+          "MRVSA6+MRVSA6",
+          "PEOEVSA5+PEOEVSA5",
+          "EstateVSA4+EstateVSA4",
+          "VSAEstate5+VSAEstate5",
+          "VSAEstate6+VSAEstate6",
+          "slogPVSA1/slogPVSA1",
+          "MRVSA4/MRVSA4",
+          "MRVSA5/MRVSA5",
+          "MRVSA9/MRVSA9"
+        ],
+        "counts": {
+          "start": 3780,
+          "after_variance": 3517,
+          "after_correlation": 1166,
+          "after_lasso": 201,
+          "after_rfecv": 18,
+          "rfe18": 18
+        }
+      },
+      {
+        "seed_rows": 6297,
+        "features": [
+          "slogPVSA7*PEOEVSA8",
+          "MRVSA6*slogPVSA3",
+          "MRVSA6*EstateVSA6",
+          "PEOEVSA5*VSAEstate8",
+          "PEOEVSA6*LabuteASA",
+          "VSAEstate2*VSAEstate1",
+          "VSAEstate5*MRVSA8",
+          "PEOEVSA5+PEOEVSA5",
+          "PEOEVSA6+PEOEVSA6",
+          "PEOEVSA7+PEOEVSA7",
+          "EstateVSA5+EstateVSA5",
+          "VSAEstate5+VSAEstate5",
+          "VSAEstate6+VSAEstate6",
+          "abs(MRVSA6-MRVSA6)",
+          "slogPVSA1/slogPVSA1",
+          "MRVSA4/MRVSA4",
+          "MRVSA5/MRVSA5",
+          "MRVSA9/MRVSA9"
+        ],
+        "counts": {
+          "start": 3780,
+          "after_variance": 3520,
+          "after_correlation": 1159,
+          "after_lasso": 193,
+          "after_rfecv": 18,
+          "rfe18": 18
+        }
+      }
+    ],
+    "frequency": {
+      "slogPVSA1/slogPVSA1": 3,
+      "MRVSA5/MRVSA5": 3,
+      "VSAEstate6+VSAEstate6": 3,
+      "PEOEVSA5+PEOEVSA5": 3,
+      "PEOEVSA6+PEOEVSA6": 2,
+      "PEOEVSA7+PEOEVSA7": 2,
+      "MRVSA6*EstateVSA6": 2,
+      "PEOEVSA5*VSAEstate8": 2,
+      "MRVSA4/MRVSA4": 2,
+      "MRVSA9/MRVSA9": 2,
+      "VSAEstate5+VSAEstate5": 2,
+      "PEOEVSA5*PEOEVSA6": 1,
+      "MRVSA6*LabuteASA": 1,
+      "slogPVSA9*PEOEVSA8": 1,
+      "EstateVSA2+EstateVSA2": 1,
+      "slogPVSA5+slogPVSA5": 1,
+      "MRVSA9*EstateVSA7": 1,
+      "PEOEVSA5*VSAEstate9": 1,
+      "EstateVSA3/EstateVSA3": 1,
+      "PEOEVSA6*PEOEVSA10": 1,
+      "PEOEVSA5*PEOEVSA8": 1,
+      "EstateVSA2*VSAEstate0": 1,
+      "PEOEVSA10*slogPVSA3": 1,
+      "EstateVSA3*slogPVSA4": 1,
+      "EstateVSA4+EstateVSA4": 1,
+      "EstateVSA3*VSAEstate0": 1,
+      "EstateVSA9*EstateVSA4": 1,
+      "EstateVSA7*PEOEVSA10": 1,
+      "MRVSA6+MRVSA6": 1,
+      "VSAEstate2*EstateVSA7": 1,
+      "slogPVSA11+slogPVSA11": 1,
+      "EstateVSA2*VSAEstate5": 1,
+      "MRVSA6*slogPVSA3": 1,
+      "abs(MRVSA6-MRVSA6)": 1,
+      "VSAEstate5*MRVSA8": 1,
+      "VSAEstate2*VSAEstate1": 1,
+      "EstateVSA5+EstateVSA5": 1,
+      "PEOEVSA6*LabuteASA": 1,
+      "slogPVSA7*PEOEVSA8": 1
+    },
+    "stable_features": [
+      "MRVSA4/MRVSA4",
+      "MRVSA5/MRVSA5",
+      "MRVSA6*EstateVSA6",
+      "MRVSA9/MRVSA9",
+      "PEOEVSA5*VSAEstate8",
+      "PEOEVSA5+PEOEVSA5",
+      "PEOEVSA6+PEOEVSA6",
+      "PEOEVSA7+PEOEVSA7",
+      "VSAEstate5+VSAEstate5",
+      "VSAEstate6+VSAEstate6",
+      "slogPVSA1/slogPVSA1"
+    ],
+    "jaccard_pairwise": [
+      {
+        "run_a": 1,
+        "run_b": 2,
+        "jaccard": 0.125
+      },
+      {
+        "run_a": 1,
+        "run_b": 3,
+        "jaccard": 0.241
+      },
+      {
+        "run_a": 2,
+        "run_b": 3,
+        "jaccard": 0.286
+      }
+    ],
+    "stable_kept_in_final": 8
+  },
+  "timings": {
+    "variance": 0.9,
+    "correlation": 3.1,
+    "lasso": 1.9,
+    "rfe": 17.9
+  },
+  "sample_rows": 10495,
+  "class_counts": {
+    "0": 2277,
+    "1": 8,
+    "2": 8210
+  }
+}
