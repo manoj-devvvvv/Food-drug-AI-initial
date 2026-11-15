@@ -9,6 +9,7 @@ pydantic-settings==2.15.0
 email-validator==2.3.0
 
 # Scientific Computing
+pyarrow==25.0.1
 numpy==2.3.3
 pandas==2.3.3
 scipy==1.16.2
